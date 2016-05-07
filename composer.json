@@ -1,0 +1,17 @@
+{
+    "name": "dklib/phalcon-skeletion-with-phalcon-boot",
+    "description": "Phalcon-skeletion with PhalconBoot",
+    "authors": [
+        {
+            "name": "Deka",
+            "email": "dekatruong@gmail.com"
+        }
+    ],
+    "autoload": {        
+        "classmap": ["library/"],     
+        "files": ["app/Bootstrap.php"]
+    },
+    "require":{
+        "dklib/phalcon-boot":"dev-master"  
+    }
+}

@@ -1,0 +1,8 @@
+#Prevent bug when Apache Server config default startup file is index.html only
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteRule  ^$ public/    [L]
+	RewriteRule  (.*) public/$1 [L]
+</IfModule>

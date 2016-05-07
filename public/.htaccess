@@ -1,0 +1,12 @@
+AddDefaultCharset UTF-8
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    #Case not exit folder,file in /public, AND file is not resource type: boost web app
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !(\.(html|js|ico|gif|JPG|jpeg|jpg|bmp|png|css|swf|xml|css|ttf|eot|svg|woff|flv|txt))$ [NC]
+    RewriteRule ^(.*)$ index.php?_url=/$1 [QSA,L]
+
+    #Case Else:  read file content directly
+</IfModule>

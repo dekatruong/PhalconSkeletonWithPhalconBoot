@@ -1,0 +1,39 @@
+[
+    {
+        "name": "dklib/phalcon-boot",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dekatruong/PhalconBoot.git",
+            "reference": "3996d3abcf92d09ce4303c314b4cb1c950312577"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dekatruong/PhalconBoot/zipball/3996d3abcf92d09ce4303c314b4cb1c950312577",
+            "reference": "3996d3abcf92d09ce4303c314b4cb1c950312577",
+            "shasum": ""
+        },
+        "time": "2016-05-07 20:49:04",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "PhalconBoot\\": "src/PhalconBoot/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Deka",
+                "email": "dekatruong@gmail.com"
+            }
+        ],
+        "description": "PhalconBoot - boot Phalcon in a Class",
+        "keywords": [
+            "bootstrap",
+            "phalcon",
+            "phalcon boot"
+        ]
+    }
+]
